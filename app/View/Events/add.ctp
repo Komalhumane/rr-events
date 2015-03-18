@@ -110,7 +110,8 @@
         <div class="panel-heading">
            <b>Event Details</b> 
         </div>
-        <div class="panel-body">
+        <div class="panel-body" >
+           <div id="add-child" >
             <div class="row">
                 <div class="form-group col-sm-12">
                     <label class="control-label col-sm-3">Event Name</label>
@@ -441,7 +442,7 @@
                     </div>
                 </div>                                          
             </div>
-            <div class="row">
+            <div class="row photo">
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label col-sm-6 desc">Photo 4</label>
@@ -466,6 +467,10 @@
                 </div> 
             </div>
         </div>
+        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more</a></center>
+        </div>
+        
+        
     </div> 
     <div class="panel panel-info" id="organizer_details">
         <div class="panel-heading">
@@ -702,4 +707,49 @@
   type: 'image'
     // other options
     });
-</script>   
+</script>  
+
+<script >
+var counter = 4;
+var limit = 10;
+function addInput(divName){ 
+     if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+     }
+     else {
+          var rowdiv = document.createElement('div');
+          rowdiv.setAttribute("class", "row");
+
+          var colfirstdiv = document.createElement('div');
+          colfirstdiv.setAttribute("class", "col-sm-6");
+
+          var colseconddiv = document.createElement('div');
+          colseconddiv.setAttribute("class", "col-sm-6");
+
+          var colthirddiv = document.createElement('div');
+          colthirddiv.setAttribute("class", "form-group");
+
+          rowdiv.appendChild(colfirstdiv);
+          rowdiv.appendChild(colseconddiv);
+          colfirstdiv.appendChild(colthirddiv);
+
+
+         
+          colthirddiv.innerHTML += "<label class='control-label col-sm-6 desc'>Photo " + (counter + 1) + " </label>";
+
+          var colforthdiv = document.createElement('div');
+          colforthdiv.setAttribute("class", "col-sm-4 file-top");
+          colthirddiv.appendChild(colforthdiv);
+
+          colforthdiv.innerHTML = '<input type="file" name="data[photo][photo_'+ (counter + 1) +']" id="photo_'+ (counter + 1) +'" tabindex ="19" title="Upload a Photo Max. 2MB (optional)">';
+          colforthdiv.innerHTML += '<input type="hidden" name="data[data][photo_'+ (counter + 1) +']" id="photo_'+ (counter + 1) +'_path" class="form-control">';
+          
+
+                 
+                            
+
+          document.getElementById('add-child').appendChild(rowdiv);
+          counter++;
+     }
+}
+</script> 
