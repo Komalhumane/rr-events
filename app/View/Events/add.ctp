@@ -581,7 +581,7 @@
                     <div class="form-group">
                         <label class="control-label p-0 col-sm-3" ></label>
                         <div class="col-sm-6" style="padding-left: 20px;
-    padding-top: 10px;">
+    padding-top: 10px;color:#888;">
                             <?php 
                             $dt = new DateTime();
                             echo $dt->format('d-m-Y g:i A');
