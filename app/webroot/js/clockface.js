@@ -81,7 +81,9 @@
         /*
         Displays widget with specified value
         */
+      
         show: function(value) {
+
           console.log($(window).height());
           console.log("offset is");
           console.log(this.$element.offset().top);
@@ -101,12 +103,16 @@
           {
             $('.clockface').removeClass('up');
             $('.clockface').addClass('down');
+            //$('.clockface').css('bottom') = 'auto';
+
           }
           else 
           {
              $('.clockface').removeClass('down');
             $('.clockface').addClass('up');
           }
+
+          
 
             if(this.$clockface.is(':visible')) {
               return;
@@ -126,6 +132,8 @@
             //trigger shown event
             this.$element.triggerHandler('shown.clockface', this.getTime(true));
         },
+
+       
         /*
         hides widget
         */
@@ -366,16 +374,25 @@
         Place widget below input
         */
         place: function(){
+         
+
           var zIndex = parseInt(this.$element.parents().filter(function() {
                    return $(this).css('z-index') != 'auto';
              }).first().css('z-index'), 10)+10,
              offset = this.$element.offset();
           this.$clockface.css({
+           
             top: offset.top + this.$element.outerHeight(),
             left: offset.left,
-            zIndex: zIndex
+            zIndex: zIndex,
+            bottom:'auto'
           });
-        },  
+ 
+     
+
+        },
+
+
 
         /*
         keydown handler (for not inline mode)
