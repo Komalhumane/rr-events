@@ -529,7 +529,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="control-label ml-0 col-sm-4">Contact No.</label>
-                        <div class="col-sm-6">
+                        <div class="col-sm-7" style="padding-right:0;">
                             <input name="data[data][organizer_contact]" class="form-control input-sm" value="<?php echo $event['organizer_contact']; ?>" title="Enter Organizer Contact No." id="organizer_contact" maxlength="10" tabindex ='19' type="text">
                         </div>
                     </div>
@@ -547,7 +547,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label ml-0 col-sm-4">Website</label>
-                        <div class="col-sm-6">
+                        <div class="col-sm-7" style="padding-right:0;">
                             <input name="data[data][organizer_website]" value="<?php echo $event['organizer_website']; ?>" class="form-control input-sm" title="Enter Organizer Website" tabindex ='21' id="organizer_website" type="url" >
                         </div>
                     </div>  
