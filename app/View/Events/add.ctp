@@ -113,7 +113,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label class="control-label col-sm-3" style="margin-left:0;">Event Name</label>
+                    <label class="control-label col-sm-3">Event Name</label>
                     <div class="col-sm-7 pad-left-11 pl-15">
                         <input name="data[data][event_name]" type="text" class="form-control input-sm" tabindex ='4' id="event_name" maxlength="50" autocomplete="off" required="required">         
                     </div>
