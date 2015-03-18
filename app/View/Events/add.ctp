@@ -563,7 +563,7 @@
                 <div class="col-sm-6">                  
                     <div class='form-group'>
                         <label class="control-label col-sm-5 left-24" tabindex ='25'>Notify?</label>
-                        <div class="col-sm-6 pad-left-4">
+                        <div class="col-sm-5 " style="padding-left:9px;">
                             <label class="radio-inline" style="margin-left:-1px;">
                                 <input type="radio" name="data[data][notif]" id="optionsRadiosInline1" value="y">Yes
                             </label>
@@ -571,6 +571,10 @@
                                 <input type="radio" name="data[data][notif]" id="optionsRadiosInline2" value="n" checked>No
                             </label>
                         </div>
+                        <a class="tip2" href="#" style="top: 4px;"> 
+                                 <span class="fa fa-info-circle"></span> 
+                                <div class="msg">Date and time of sending notification to users.</div> 
+                                </a> 
                     </div>
                 </div>
             </div>
@@ -578,7 +582,7 @@
                 <div class="col-sm-12">
                     <div class="form-group col-sm-6">
                         <label class="control-label p-0 col-sm-6" style="margin-left:0;">Date</label>
-                        <div class="input-group date p-0 col-sm-6" id="notif" style="padding-left: 12px;">  
+                        <div class="input-group date p-0 col-sm-6" id="notif" style="padding-left: 12px;float:left;">  
                             <input name="data[data][notif_date]" type="text"  class="form-control input-sm" tabindex ='26' id="notif_date" aria-describedby="notif_date_btn" readonly>
                             <span class="input-group-btn">
                                 <button class="btn default btn-sm picker" id="notif_date_btn" type="button" disabled>
@@ -586,10 +590,14 @@
                                 </button>
                             </span>                             
                         </div>
+                        <a class="tip2" href="#"> 
+                                 <span class="fa fa-info-circle"></span> 
+                                <div class="msg">Date and time of sending notification to users.</div> 
+                                </a> 
                     </div>
                     <div class="form-group col-sm-6 end-time">
                         <label class="control-label p-0  col-sm-5" style="margin-left:0;"> Time</label>
-                        <div class="input-group time col-sm-6" style="padding-left: 12px;">
+                        <div class="input-group time col-sm-6" style="padding-left: 12px;float:left;">
                             <input name="data[data][notif_time]" readonly type="text" class="form-control input-sm disTime" tabindex ='27' id="notif_time" required aria-describedby="notif_time_btn">
                             <span class="input-group-btn">
                                     <button class="btn default btn-sm picker" type="button" id="notif_time_btn">
@@ -598,11 +606,12 @@
                                 </span>
                               
                         </div>
-                    </div>
-                      <a class="tip2" href="#"> 
+                        <a class="tip2" href="#"> 
                                  <span class="fa fa-info-circle"></span> 
                                 <div class="msg">Date and time of sending notification to users.</div> 
                                 </a> 
+                    </div>
+                      
                 </div>
                 <div class="col-sm-12">                        
                 </div>              
