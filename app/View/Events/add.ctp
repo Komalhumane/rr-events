@@ -173,14 +173,18 @@
                         ); 
                         ?> 
                         </center>
+                        <a class="tip2" href="#" style="right: 65px;"> 
+                                  <span class="fa fa-info-circle"></span> 
+                                  <div class="msg">Details about events - Product details, History, Ticket prices, any rules / regulations</div> 
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group col-sm-6">
-                        <label class="control-label col-sm-6 p-0" style="margin-left:0;">Start Date</label>
-                        <div class="input-group date col-sm-6" id="start" style="padding-left: 11px;">  
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-6">
+                        <label class="control-label col-sm-6 p-0" >Start Date</label>
+                        <div class="input-group date col-sm-6" id="start" style="padding-left: 11px;float:left;margin-right: 2px;">  
                             <input name="data[data][start_date]" type="text"  class="form-control input-sm" tabindex ='8' required id="start_date" aria-describedby="start_date_btn">
                             <span class="input-group-btn" id="start_date_btn">
                                 <button class="btn default btn-sm picker" type="button">
@@ -188,10 +192,15 @@
                                 </button>
                             </span>                             
                         </div>
+                        <a class="tip2" href="#"> 
+                                  <span class="fa fa-info-circle"></span> 
+                                  <div class="msg">Choose when the event starts and at what time it starts</div> 
+                    </a>
                     </div>
-                    <div class="form-group col-sm-6 start-time">
+                    
+                    <div class="col-sm-6 start-time">
                         <label class="control-label col-sm-5 p-0" style="margin-left:0;">Start Time</label>
-                        <div class="input-group time col-sm-6" style="padding-left: 12px;">
+                        <div class="input-group time col-sm-6" style="padding-left: 12px;float:left;">
                        <input type="text" name="data[data][start_time]" id="start_time" class="form-control input-sm disTime" required="required" readonly
                        aria-describedby="start_time_btn">
                          <span class="input-group-btn">
@@ -202,20 +211,21 @@
 
 
                         </div>
-                    </div>
-                  <a class="tip2" href="#"> 
+                        <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
                                   <div class="msg">Choose when the event starts and at what time it starts</div> 
                     </a>
+                    </div>
+                  
                 </div>
                 <div class="col-sm-12">                        
                 </div>              
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group col-sm-6">
-                        <label class="control-label col-sm-6 p-0" style="margin-left:0;">End Date</label>
-                        <div class="input-group date col-sm-6" id="end" style="padding-left: 11px;">
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-6">
+                        <label class="control-label col-sm-6 p-0" >End Date</label>
+                        <div class="input-group date col-sm-6" id="end" style="padding-left: 11px;float:left;margin-right: 2px;">
                             <input name="data[data][end_date]" type="text" class="form-control input-sm" id="end_date" tabindex ='10' aria-describedby="end_date_btn">
                                 <span class="input-group-btn" id="end_date_btn">
                                     <button class="btn default btn-sm picker" type="button">
@@ -223,10 +233,15 @@
                                     </button>
                                 </span>
                         </div>
+                        <a class="tip2" href="#"> 
+                                  <span class="fa fa-info-circle"></span> 
+                                  <div class="msg">Choose when event ends and what time it closes.<br /> If it is one day event, leave end date blank.</div> 
+                    </a>
                     </div>
-                    <div class="form-group col-sm-6 end-time">
-                        <label class="control-label col-sm-5">End Time</label>
-                            <div class="input-group time col-sm-6" style="padding-left: 12px;">
+
+                    <div class="col-sm-6 end-time">
+                        <label class="control-label col-sm-5" style="margin-left:0;">End Time</label>
+                            <div class="input-group time col-sm-6" style="padding-left: 12px;float:left;">
                                 <input name="data[data][end_time]" type="text" class="input-sm form-control disTime" tabindex ='11' id="end_time" required="required" readonly>
                                  <span class="input-group-btn">
                                     <button class="btn default btn-sm picker" type="button" id="end_time_btn">
@@ -234,18 +249,19 @@
                                     </button>
                                 </span>
                             </div>
-                    </div> 
-                      <a class="tip2" href="#"> 
+                             <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
                                   <div class="msg">Choose when event ends and what time it closes.<br /> If it is one day event, leave end date blank.</div> 
                     </a>
+                    </div> 
+                     
                 </div>
                 <div class="col-sm-12">                        
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label class="control-label col-sm-3 " style="margin-left:0;">Venue</label> 
+                    <label class="control-label col-sm-3 " >Venue</label> 
                     <div class="col-sm-7 pad-left-11">
                         <input name="data[data][venue]" type="text" id="venue" class="form-control input-sm" autocomplete="off" maxlength="32" tabindex ='12' required="required">
                     </div>
@@ -263,7 +279,7 @@
             </div>
             <div class="row">
                 <div class="form-group col-sm-12">
-                    <label class="control-label col-sm-3" style="margin-left:0;">Location</label>   
+                    <label class="control-label col-sm-3" >Location</label>   
                     <div class="col-sm-7 pad-left-11">
                         <input name="data[data][event_address]" type="text" tabindex ='13' id="event_address" class="form-control input-sm " onclick="initialize()" onfocusout="codeAddress()" autocomplete='off' required="required">
                     </div>
@@ -298,10 +314,10 @@
                     </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group" style="margin-left:0px;">
-                        <label class="control-label col-sm-3 p-0" style="margin-left:0;">Who Can Attend</label>
-                        <div class="col-sm-3 pl-0 who-can-attend" style="margin-left:0px;">
+                <div class="form-group col-sm-12">
+                    <div class="">
+                        <label class="control-label col-sm-3" >Who Can Attend</label>
+                        <div class="col-sm-3 pl-0 who-can-attend pad-left-11" >
                             <?php 
                                 echo $this->Form->input(
                                     'data.audience',
@@ -320,10 +336,10 @@
                                 );
                             ?> 
                         </div>
-                          <a class="tip2" href="#"> 
+                            <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
                                   <div class="msg">Choose whether everyone can attend or it is members / invite only event</div> 
-                    </a>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -485,20 +501,26 @@
                     <div class="form-group">
                         <label class="control-label col-sm-5 desc left-24" style="padding-left: 0px;">Organizer Name</label>
                         <div class="col-sm-6 pad-left-4">
-                            <input name="data[data][organizer_name]" class="form-control input-sm" title="Enter Organizer Name" id="organizer_name" tabindex ='21' maxlength="32" required="required">
+                            <input name="data[data][organizer_name]" class="form-control input-sm" title="Enter Organizer Name" id="organizer_name" tabindex ='21' maxlength="32" required="required" style="float:left;">
+                             <a class="tip2" href="#"> 
+                                  <span class="fa fa-info-circle"></span> 
+                                  <div class="msg">Choose whether everyone can attend or it is members / invite only event</div> 
+                            </a>
                         </div>
+                       
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="control-label desc col-sm-4">Contact No.</label>
-                        <div class="col-sm-7" style="padding-right:0;">
-                            <input name="data[data][organizer_contact]" class="form-control input-sm" title="Enter Organizer Contact No." id="organizer_contact" maxlength="10" tabindex ='22' type="text">
-                        </div>
-                          <a class="tip2" href="#"> 
+                        <div class="col-sm-7" style="padding-left:0;">
+                            <input name="data[data][organizer_contact]" class="form-control input-sm" title="Enter Organizer Contact No." id="organizer_contact" maxlength="10" tabindex ='22' type="text" style="float: left;">
+                            <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
                                   <div class="msg">Enter Organizer's name and their contact number.</div> 
                              </a>
+                        </div>
+                          
                     </div>
                 </div>
             </div>
@@ -507,20 +529,26 @@
                     <div class="form-group">
                         <label class="control-label desc col-sm-5 left-24" style="padding-left: 0px;">About Organizer</label>
                         <div class="col-md-6 pad-left-4">
-                            <textarea tabindex="23" class="form-control input-sm" title="Enter Short Description about Organizer" name="data[data][organizer_about]" style="resize: vertical; margin-top: 0px; margin-bottom: 5px; height: 68px;" rows="3" id="organizer_about"></textarea>
+                            <textarea tabindex="23" class="form-control input-sm" title="Enter Short Description about Organizer" name="data[data][organizer_about]" style="resize: vertical; margin-top: 0px; margin-bottom: 5px; height: 68px;float:left;" rows="3" id="organizer_about"></textarea>
+                            <a class="tip2" href="#"> 
+                                  <span class="fa fa-info-circle"></span> 
+                                  <div class="msg">Choose whether everyone can attend or it is members / invite only event</div> 
+                            </a>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="control-label desc col-sm-4">Website</label>
-                        <div class="col-sm-7" style="padding-right:0;">
-                            <input name="data[data][organizer_website]" class="form-control input-sm" title="Enter Organizer Website" id="organizer_website" tabindex ='24' type="url" >
-                        </div>
-                          <a class="tip2" href="#"> 
+                        <div class="col-sm-7" style="padding-left:0;">
+                            <input name="data[data][organizer_website]" class="form-control input-sm" title="Enter Organizer Website" id="organizer_website" tabindex ='24' type="url" style="float: left;">
+                            <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
                                   <div class="msg">Enter Organizer's Website address</div> 
-                    </a>
+                            </a>
+                        </div>
+                          
                     </div>  
                 </div>
             </div>
