@@ -94,6 +94,12 @@
     echo $this->Form->input('data.photo_2',array('value'=>$event['photo_2']));
     echo $this->Form->input('data.photo_3',array('value'=>$event['photo_3']));
     echo $this->Form->input('data.photo_4',array('value'=>$event['photo_4']));
+    echo $this->Form->input('data.photo_5',array('value'=>$event['photo_5']));
+    echo $this->Form->input('data.photo_6',array('value'=>$event['photo_6']));
+    echo $this->Form->input('data.photo_7',array('value'=>$event['photo_7']));
+    echo $this->Form->input('data.photo_8',array('value'=>$event['photo_8']));
+    echo $this->Form->input('data.photo_9',array('value'=>$event['photo_9']));
+    echo $this->Form->input('data.photo_10',array('value'=>$event['photo_10']));
     echo $this->Form->input('data.organizer_name',array('value'=>$event['organizer_name']));
         
     echo $this->Form->input('data.organizer_logo',array('value'=>$event['organizer_logo']));    

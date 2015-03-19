@@ -174,7 +174,7 @@
                         ); 
                         ?> 
                         </center>
-                        <a class="tip2" href="#" style="right: 65px;"> 
+                        <a class="tip2" href="#" style="right: 41px;float:right;"> 
                                   <span class="fa fa-info-circle"></span> 
                                   <div class="msg">Details about events - Product details, History, Ticket prices, any rules / regulations</div> 
                     </a>
@@ -467,7 +467,7 @@
                 </div> 
             </div>
         </div>
-        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more</a></center>
+        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
         </div>
         
         
@@ -714,7 +714,7 @@ var counter = 4;
 var limit = 10;
 function addInput(divName){ 
      if (counter == limit)  {
-          alert("You have reached the limit of adding " + counter + " inputs");
+          alert("Maximum upload limit " + counter);
      }
      else {
           var rowdiv = document.createElement('div');
@@ -729,11 +729,28 @@ function addInput(divName){
           var colthirddiv = document.createElement('div');
           colthirddiv.setAttribute("class", "form-group");
 
+          var photoloader ="photo_"+(counter + 1)+"_loader";
+          var photooutput ="photo_"+(counter + 1)+"_output";
+
           rowdiv.appendChild(colfirstdiv);
           rowdiv.appendChild(colseconddiv);
           colfirstdiv.appendChild(colthirddiv);
+          
 
+          var colfifthdiv = document.createElement('div');
+          colfifthdiv.setAttribute("id", photoloader);
+          colfifthdiv.setAttribute("class", "loader");
 
+          var colsixthdiv = document.createElement('div');
+          colsixthdiv.setAttribute("id", photooutput);
+          colsixthdiv.setAttribute("class", "loader");
+
+          var colseventhdiv = document.createElement('div');
+          colseventhdiv.setAttribute("class", "loader ml-0");
+
+colseconddiv.appendChild(colfifthdiv);   
+          colseconddiv.appendChild(colsixthdiv);
+          colseconddiv.appendChild(colseventhdiv);
          
           colthirddiv.innerHTML += "<label class='control-label col-sm-6 desc'>Photo " + (counter + 1) + " </label>";
 
@@ -742,10 +759,18 @@ function addInput(divName){
           colthirddiv.appendChild(colforthdiv);
 
           colforthdiv.innerHTML = '<input type="file" name="data[photo][photo_'+ (counter + 1) +']" id="photo_'+ (counter + 1) +'" tabindex ="19" title="Upload a Photo Max. 2MB (optional)">';
-          colforthdiv.innerHTML += '<input type="hidden" name="data[data][photo_'+ (counter + 1) +']" id="photo_'+ (counter + 1) +'_path" class="form-control">';
-          
+          colforthdiv.innerHTML += '<input type="hidden" name="data[data][photo_'+ (counter + 1) +']" id="photo_'+ (counter + 1) +'_path" class="form-control">';     
 
-                 
+               colseventhdiv.innerHTML =" <a id='photo_"+(counter + 1)+"_remove' style='display:none;' >Remove Image</a>";
+
+        var alink = document.createElement('a');
+        alink.setAttribute('class','test-popup-link thumbnail');
+        alink.setAttribute('id','photo_'+(counter + 1)+'_link');        
+        alink.setAttribute('style','display:none');
+
+        colseventhdiv.appendChild(alink);
+
+        alink.innerHTML = "<img id='photo_"+(counter + 1)+"_display' src='<?php echo $image; ?>' alt='...'>";  
                             
 
           document.getElementById('add-child').appendChild(rowdiv);
