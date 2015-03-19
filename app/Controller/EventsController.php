@@ -88,6 +88,12 @@
 				$event['photo_2'] = $json_object->photo_2;
 				$event['photo_3'] = $json_object->photo_3;
 				$event['photo_4'] = $json_object->photo_4;
+				$event['photo_5'] = $json_object->photo_5;
+				$event['photo_6'] = $json_object->photo_6;
+				$event['photo_7'] = $json_object->photo_7;
+				$event['photo_8'] = $json_object->photo_8;
+				$event['photo_9'] = $json_object->photo_9;
+				$event['photo_10'] = $json_object->photo_10;
 				$event['organizer_name'] = $json_object->organizer_name;
 				$event['organizer_contact'] = $json_object->organizer_contact;
 				$event['organizer_website'] = $json_object->organizer_website;
