@@ -1,9 +1,18 @@
   
 $(':file').change(function(ev) {
+    console.log('on file upload');
     var ipname = $(this)[0]['id'];
     if( $('#'+ipname).val()){
       ajax_pic_upload(ipname);                  
     }    
+});
+
+
+$(document).on('change',':file',function(){
+     var ipname = $(this)[0]['id'];
+    if( $('#'+ipname).val()){
+      ajax_pic_upload(ipname);                  
+    }  
 });
 
 $("a[id$='_remove'").click(function(){

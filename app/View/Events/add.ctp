@@ -466,6 +466,7 @@
                     </div>
                 </div> 
             </div>
+
         </div>
         <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
         </div>
@@ -671,44 +672,7 @@
     </center>
 </div>
     <?php echo $this->Form->end(); ?>
-<?php 
-    echo $this->Html->script(array('bootstrap-datepicker',
-                                    'clockface',
-                                    'custom/datepic',
-                                    'main_maps_file',
-                                    'gmaps',
-                                    'custom/plan',
-                                    'custom/image-upload',
-                                    'custom/ajax/add',
-                                    'jquery.magnific-popup'
-                            )
-    );
-?>
-<script>
-    $('#map').click(function(){
-        $('#myModal').modal({
-            backdrop:true
-        });
-    });
-    $('#myModal').on("shown.bs.modal", function () {
-        var lat = parseFloat($('#lat').val());
-        var lng = parseFloat($('#lng').val());
-          google.maps.event.trigger(map, 'resize');
-        if(lat&&lng){
-          map.setCenter(new google.maps.LatLng(lat, lng));
-        }else{
-            map.setCenter(new google.maps.LatLng(21.1610859, 79.0725101));
-        }
-
-    });
-</script>
-<script>
-    $('.test-popup-link').magnificPopup({ 
-  type: 'image'
-    // other options
-    });
-</script>  
-
+    
 <script >
 var counter = 4;
 var limit = 10;
@@ -748,7 +712,7 @@ function addInput(divName){
           var colseventhdiv = document.createElement('div');
           colseventhdiv.setAttribute("class", "loader ml-0");
 
-colseconddiv.appendChild(colfifthdiv);   
+          colseconddiv.appendChild(colfifthdiv);   
           colseconddiv.appendChild(colsixthdiv);
           colseconddiv.appendChild(colseventhdiv);
          
@@ -770,7 +734,7 @@ colseconddiv.appendChild(colfifthdiv);
 
         colseventhdiv.appendChild(alink);
 
-        alink.innerHTML = "<img id='photo_"+(counter + 1)+"_display' src='<?php echo $image; ?>' alt='...'>";  
+        alink.innerHTML = "<img id='photo_"+(counter + 1)+"_display' src='<?php echo $image; ?>'>";  
                             
 
           document.getElementById('add-child').appendChild(rowdiv);
@@ -778,3 +742,41 @@ colseconddiv.appendChild(colfifthdiv);
      }
 }
 </script> 
+
+<?php 
+    echo $this->Html->script(array('bootstrap-datepicker',
+                                    'clockface',
+                                    'custom/datepic',
+                                    'main_maps_file',
+                                    'gmaps',
+                                    'custom/plan',
+                                    'custom/image-upload',
+                                    'custom/ajax/add',
+                                    'jquery.magnific-popup'
+                            )
+    );
+?>
+<script>
+    $('#map').click(function(){
+        $('#myModal').modal({
+            backdrop:true
+        });
+    });
+    $('#myModal').on("shown.bs.modal", function () {
+        var lat = parseFloat($('#lat').val());
+        var lng = parseFloat($('#lng').val());
+          google.maps.event.trigger(map, 'resize');
+        if(lat&&lng){
+          map.setCenter(new google.maps.LatLng(lat, lng));
+        }else{
+            map.setCenter(new google.maps.LatLng(21.1610859, 79.0725101));
+        }
+
+    });
+</script>
+<script>
+    $('.test-popup-link').magnificPopup({ 
+  type: 'image'
+    // other options
+    });
+</script>  

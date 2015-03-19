@@ -353,7 +353,7 @@
                             <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                               <img src="<?php echo $image; ?>" alt="...">
                             </a>
-                            <!-- <img src="<?php echo $image; ?>" height="100" width="100"> -->
+                            
                         <?php endif;?>
                         </div>
                         <div class="col-xs-6 col-md-3">
@@ -363,7 +363,7 @@
                                 <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                                     <img src="<?php echo $image; ?>" alt="...">
                                 </a>
-                                <!-- <img src="<?php echo $image; ?>" height="100" width="100"> -->
+                               
                             <?php endif;?>                
                         </div>
                         <div class="col-md-3">
@@ -373,7 +373,7 @@
                                     <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                                         <img src="<?php echo $image; ?>" alt="...">
                                     </a>
-                                    <!-- <img src="<?php echo $image; ?>" height="100" width="100"> -->
+                                    
                             <?php endif;?>
                         </div>
                         <div class="col-md-3">
@@ -382,8 +382,7 @@
                                 if($image!=""): ?>
                                     <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                                         <img src="<?php echo $image; ?>" alt="...">
-                                    </a><!-- 
-                                    <img src="<?php echo $image; ?>" height="100" width="100"> -->
+                                    </a>
                             <?php endif;?>                
                         </div>
                     </div>
