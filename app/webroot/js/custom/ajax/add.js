@@ -11,7 +11,7 @@ $(document).ready(function() {
     });
 });  
 
-$("[required='required']").click(function() {
+$("input").click(function() {
     var ff = $(this).attr('id');
     var i = 0;
     var c = 0;

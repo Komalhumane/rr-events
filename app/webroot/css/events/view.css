@@ -45,9 +45,8 @@ label{
     z-index: 1040;
 }
 
-.thumbnail{
-    width: 90px;
-    height: auto;
+.thumbnail > img, .thumbnail a > img{
+    height: 100px;
 }
 
 @media only screen and (min-width:320px) and (max-width: 480px){
