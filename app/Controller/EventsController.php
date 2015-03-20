@@ -104,6 +104,7 @@
 				$event['venue'] = $json_object->venue;
 			}
 			return $event;
+			pr($event);
 		}
 
 		protected function getCatTostring($cat_id=""){
