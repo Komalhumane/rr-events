@@ -353,7 +353,7 @@ for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;    
     $image = $event[$image_id];
     if($image!=""): ?>
-    <div class="col-xs-6 col-md-3" style="height: 200px;width: auto;">
+    <div class="col-xs-6 col-md-3" >
     <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                               <img src="<?php echo $image; ?>" alt="...">
                             </a>
