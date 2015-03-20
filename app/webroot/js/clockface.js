@@ -385,7 +385,7 @@
             top: offset.top + this.$element.outerHeight(),
             left: offset.left,
             zIndex: zIndex,
-            bottom:'auto'
+            
           });
  
      

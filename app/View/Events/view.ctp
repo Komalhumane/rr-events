@@ -348,12 +348,12 @@
                     <div class="col-md-12" style="margin-bottom:20px;">
                         <div class="col-xs-6 col-md-3">
                         <?php 
- /*                       
+                        
 for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'$i;
     //echo "The total number of photos are:photo_$i <br>";
     echo $image_id;
-} */
+} 
 
                         $image = $event['photo_1'];
                         if($image!=""): ?>

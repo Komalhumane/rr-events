@@ -241,13 +241,13 @@ a.tip2:hover .msg:after {
     color: #ff0000;
 }
 
-/*.down {
+.down {
     top: 655px!important;
 }
 
 .up {
     top: 452px!important;
-}*/
+}
 
 .rupee img{
     max-width: inherit;
