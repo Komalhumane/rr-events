@@ -351,17 +351,12 @@
                         
 for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;    
-    echo $image_id;
+    
     $image = $event[$image_id];
-                        if($image!=""): ?>
-                            <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
-                              <img src="<?php echo $image; ?>" alt="...">
-                            </a>
-                            
-                        <?php endif;
+    echo $image;                        
 } 
 
-?>                 <?      /* $image = $event[$image_id];
+?>                 <?php     /* $image = $event[$image_id];
                         if($image!=""): ?>
                             <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                               <img src="<?php echo $image; ?>" alt="...">
