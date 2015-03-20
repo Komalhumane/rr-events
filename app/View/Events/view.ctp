@@ -350,7 +350,7 @@
                         <?php 
                         
 for ($i = 1; $i <= 10; $i++) {
-    $image_id = 'photo_'$i;
+    $image_id = 'photo_'.$i;
     echo "The total number of photos are:photo_$i <br>";
     echo $image_id;
 } 
