@@ -352,8 +352,8 @@
 for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;    
     
-    $image = $event[$image_id];
-    echo $image;                        
+    // $image = $event[$image_id];
+    // echo $image;                        
 } 
 
 ?>                 <?php     /* $image = $event[$image_id];
