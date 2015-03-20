@@ -58,7 +58,7 @@
                     </div>
                     <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose if you are adding event or offer </div> 
+                                  <div class="msg">Select Event if it’s an exhibition/Show/Performance. Select Offer if it’s a discount, /scheme, going on by a store or brand or business.</div> 
                     </a>
                 </div>
                 <div class='form-group col-md-6'>
@@ -83,7 +83,7 @@
                     </div>
                       <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Whether the organizer has asked for Gold / Diamond Plan.</div> 
+                                  <div class="msg">Gold means no notification option. Select Diamond if we have received money for notification.</div> 
                     </a>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     </div>
                       <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Amount you received from organizer. Leave blank if not given</div> 
+                                  <div class="msg">Enter exact amount received from organizer.</div> 
                     </a>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                     </div>
                       <a class="tip2" href="#"> 
                             <span class="fa fa-info-circle"></span> 
-                            <div class="msg">Enter event name - Ex: Jaipur Gharana Exhibition</div> 
+                            <div class="msg">Enter the Main Event/offer name. This will be displayed in listing also.</div> 
                         </a>
                     <div class="col-sm-3 charDisp" id="event_name_char_disp">
                         <small>
@@ -139,7 +139,7 @@
                         </div>
                           <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Short and sweet event description : Ex - The best shawls from Jaipur</div> 
+                                  <div class="msg">Describe the event/offer in one line. This will be displayed in listing</div> 
                     </a>
                         <div class="col-sm-3 charDisp" id="oneline_description_char_disp">
                             <small>
@@ -159,7 +159,7 @@
                         </div>
                           <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Details about events - Product details, History, Ticket prices, any rules / regulations</div> 
+                                  <div class="msg">Enter Event/offer Details, Who is performing in case of concert, what are their famous performances, History, Product Details, Prices, Uniqueness of event. Website link to event, etc</div> 
                     </a>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                         </center>
                         <a class="tip2" href="#" style="right: 41px;float:right;"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Details about events - Product details, History, Ticket prices, any rules / regulations</div> 
+                                  <div class="msg">Select the best suiting category. Don’t put in all.</div> 
                     </a>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                         </div>
                         <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose when the event starts and at what time it starts</div> 
+                                  <div class="msg">Date when the Event/offer is starting</div> 
                     </a>
                     </div>
                     
@@ -214,7 +214,7 @@
                         </div>
                         <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose when the event starts and at what time it starts</div> 
+                                  <div class="msg">Time at which Event/offer is starting </div> 
                     </a>
                     </div>
                   
@@ -236,7 +236,7 @@
                         </div>
                         <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose when event ends and what time it closes.<br /> If it is one day event, leave end date blank.</div> 
+                                  <div class="msg">Date when the Event/offer is ending</div> 
                     </a>
                     </div>
 
@@ -252,7 +252,7 @@
                             </div>
                              <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose when event ends and what time it closes.<br /> If it is one day event, leave end date blank.</div> 
+                                  <div class="msg">Time at which Event/offer is ending</div> 
                     </a>
                     </div> 
                      
@@ -268,7 +268,7 @@
                     </div>
                       <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Exact venue of event. Ex : Chitnavis Centre, Near Hislop College</div> 
+                                  <div class="msg">Enter Only the Name of Venue. Not Address. This will be displayed in listing.</div> 
                     </a>
                     <div class="col-sm-3 charDisp" id="venue_char_disp">
                         <small>
@@ -289,7 +289,7 @@
                    </div>
                      <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">The exact location, choose from dropdown or point on the map.
+                                  <div class="msg">Enter the Name of venue and then select it from the names that appear. Make sure that location is exact on Map. Check it.
                                   </div> 
                     </a>
                     <?php 
@@ -339,7 +339,7 @@
                         </div>
                             <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose whether everyone can attend or it is members / invite only event</div> 
+                                  <div class="msg">Check with organizer if it’s a members only event or anyone can attend it. Club events are generally members only. </div> 
                             </a>
                     </div>
                 </div>
@@ -510,7 +510,7 @@
                             <input name="data[data][organizer_name]" class="form-control input-sm" title="Enter Organizer Name" id="organizer_name" tabindex ='21' maxlength="32" required="required" style="float:left;">
                              <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose whether everyone can attend or it is members / invite only event</div> 
+                                  <div class="msg">Company or Person who is organizing the event/Offer</div> 
                             </a>
                         </div>
                        
@@ -523,7 +523,7 @@
                             <input name="data[data][organizer_contact]" class="form-control input-sm" title="Enter Organizer Contact No." id="organizer_contact" maxlength="10" tabindex ='22' type="text" style="float: left;">
                             <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Enter Organizer's name and their contact number.</div> 
+                                  <div class="msg">People will contact on this no. to talk to organizer. Please try calling the no. before entering it. It should work. </div> 
                              </a>
                         </div>
                           
@@ -538,7 +538,7 @@
                             <textarea tabindex="23" class="form-control input-sm" title="Enter Short Description about Organizer" name="data[data][organizer_about]" style="resize: vertical; margin-top: 0px; margin-bottom: 5px; height: 68px;float:left;" rows="3" id="organizer_about"></textarea>
                             <a class="tip2" href="#"> 
                                   <span class="fa fa-info-circle"></span> 
-                                  <div class="msg">Choose whether everyone can attend or it is members / invite only event</div> 
+                                  <div class="msg">Put details about the organizer. This will build creditability. Mention what all they have done in past, Awards, etc, If business then what all business it does.</div> 
                             </a>
                         </div>
                         
@@ -579,7 +579,7 @@
                         </div>
                         <a class="tip2" href="#" style="top: 4px;"> 
                                  <span class="fa fa-info-circle"></span> 
-                                <div class="msg">Date and time of sending notification to users.</div> 
+                                <div class="msg">Select if the organizer wants to send a notification to the mobile of users.</div> 
                                 </a> 
                     </div>
                 </div>
@@ -610,7 +610,7 @@
                         </div>
                         <a class="tip2" href="#"> 
                                  <span class="fa fa-info-circle"></span> 
-                                <div class="msg">Date and time of sending notification to users.</div> 
+                                <div class="msg">Select date when to send the notification</div> 
                                 </a> 
                     </div>
                     <div class="form-group col-sm-6 end-time">
@@ -626,7 +626,7 @@
                         </div>
                         <a class="tip2" href="#"> 
                                  <span class="fa fa-info-circle"></span> 
-                                <div class="msg">Date and time of sending notification to users.</div> 
+                                <div class="msg">Select time when to send the notification. Send only between 7am to 8pm</div> 
                                 </a> 
                     </div>
                       
@@ -642,7 +642,7 @@
                             <textarea class="form-control" tabindex="28" title="Message to be sent in Notification" name="data[data][notif_msg]" id='notif_msg' style="resize: vertical; width:66%; margin-top: 0px; margin-bottom: 5px; margin-right: 10px; height: 68px; float: left;" rows="3" maxlength="140" readonly></textarea>
                             <a class="tip2" href="#"> 
                                  <span class="fa fa-info-circle"></span> 
-                                <div class="msg">The message to accompany the notification</div> 
+                                <div class="msg">This is the notification message: Be careful what you write. This will be directly displayed in the mobile of users.</div> 
                                 </a> 
                            <span class="help-block" style="float:right;width: 125px;">Characters Left &nbsp;<div id="notif_msg_char"style="float:right;margin-right:12px;">140</div></span>       
                         </div>
