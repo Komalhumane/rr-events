@@ -350,18 +350,24 @@
                         <?php 
                         
 for ($i = 1; $i <= 10; $i++) {
-    $image_id = 'photo_'.$i;
-    echo "The total number of photos are:photo_$i <br>";
+    $image_id = 'photo_'.$i;    
     echo $image_id;
-} 
-
-                        $image = $event['photo_1'];
+    $image = $event[$image_id];
                         if($image!=""): ?>
                             <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                               <img src="<?php echo $image; ?>" alt="...">
                             </a>
                             
-                        <?php endif;?>
+                        <?php endif;
+} 
+
+?>                 <?      /* $image = $event[$image_id];
+                        if($image!=""): ?>
+                            <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
+                              <img src="<?php echo $image; ?>" alt="...">
+                            </a>
+                            
+                        <?php endif;*/?>
                         </div>
                         <div class="col-xs-6 col-md-3">
                             <?php 
