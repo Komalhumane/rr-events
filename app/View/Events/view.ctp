@@ -346,16 +346,18 @@
                 <div class="row"><hr></div>
                 <div class="row">
                     <div class="col-md-12" style="margin-bottom:20px;">
-                        <div class="col-xs-6 col-md-3">
+                        
                         <?php 
                         
 for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;    
     $image = $event[$image_id];
     if($image!=""): ?>
+    <div class="col-xs-6 col-md-3">
     <a href="<?php echo $image; ?>" class="test-popup-link thumbnail">
                               <img src="<?php echo $image; ?>" alt="...">
                             </a>
+                            </div>
     <?php endif;                        
 } 
 
@@ -366,7 +368,7 @@ for ($i = 1; $i <= 10; $i++) {
                             </a>
                             
                         <?php endif;*/?>
-                        </div>
+                        
                        
                     </div>
                 </div>
