@@ -351,9 +351,10 @@
                         
 for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;    
-    
     $image = $event[$image_id];
-    echo $image;                        
+    if($image!=""): ?>
+    <a>img present</a>
+    <?php endif;                        
 } 
 
 ?>                 <?php     /* $image = $event[$image_id];
