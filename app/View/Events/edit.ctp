@@ -716,7 +716,7 @@ for ($i = 1; $i <= 10; $i++) {
 </script>          
 
 
-<script >
+<!--<script >
 var counter = 4;
 var limit = 10;
 function addInput(divName){ 
@@ -787,4 +787,4 @@ var photooutput ="photo_"+(counter+1)+"_output";
           counter++;
      }
 }
-</script> 
+</script>--> 
