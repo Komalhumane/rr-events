@@ -356,7 +356,7 @@ for ($i = 1; $i <= 10; $i++) {
     $image = $event[$image_id];
     if($image!=""): ?>
 <div class="row">    
-    <!--<div class="col-sm-6">
+    <div class="col-sm-6">
         <div class="form-group pl-15 pr-15">
             <label class="control-label ml-0 col-sm-6"><?php echo $image_id;?></label>
             <div class="col-sm-4 file-top">
@@ -366,7 +366,7 @@ for ($i = 1; $i <= 10; $i++) {
         </div>
     </div>
  
-    <div class="col-sm-6">
+ <!--   <div class="col-sm-6">
         <div id="<?php echo $image_id;?>_loader" class="loader"></div>
         <div id="<?php echo $image_id;?>_output" class="loader"></div>
         <?php 
@@ -388,7 +388,7 @@ for ($i = 1; $i <= 10; $i++) {
 } 
 
  ?>               
-                <div class="row">
+            <!--    <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group pl-15 pr-15">
                             <label class="control-label ml-0 col-sm-6">Photo 1</label>
@@ -514,7 +514,7 @@ for ($i = 1; $i <= 10; $i++) {
                             </a>
                         </div>                                   
                     </div> 
-                </div>
+                </div>-->
             </div>    <!-- add-child -->
         </div><!-- panel-body -->
         <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
