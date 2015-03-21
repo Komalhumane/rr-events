@@ -521,7 +521,16 @@ for ($i = 1; $i <= 10; $i++) {
                 </div>-->
             </div>    <!-- add-child -->
         </div><!-- panel-body -->
-        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
+        <?php 
+        for ($i = 1; $i <= 10; $i++) {
+    $image_id = 'photo_'.$i;    
+    $image = $event[$image_id];
+    if($image=""): ?>
+    <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
+    <?php endif; 
+}
+?>
+        
     </div>
     <!-- </div>  -->
 
