@@ -366,7 +366,7 @@ for ($i = 1; $i <= 10; $i++) {
         </div>
     </div>
  
- <!--   <div class="col-sm-6">
+   <div class="col-sm-6">
         <div id="<?php echo $image_id;?>_loader" class="loader"></div>
         <div id="<?php echo $image_id;?>_output" class="loader"></div>
         <?php 
@@ -382,7 +382,7 @@ for ($i = 1; $i <= 10; $i++) {
                  <img id="<?php echo $image_id; ?>_display" src="<?php echo $image; ?>" alt="...">
             </a>
         </div>
-    </div> -->
+    </div>
 </div>      
     <?php endif;                        
 } 
