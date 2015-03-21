@@ -533,7 +533,7 @@ for ($i = 1; $i <= 10; $i++) {
    <?php } else{
         echo "Not present";
         echo $image_id;?>
-        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center> ?>
+        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center> 
        
 <?php    }
 ?>
@@ -736,7 +736,7 @@ for ($i = 1; $i <= 10; $i++) {
 </script>          
 
 
-<!--<script >
+<script >
 var counter = 4;
 var limit = 10;
 function addInput(divName){ 
@@ -807,4 +807,4 @@ var photooutput ="photo_"+(counter+1)+"_output";
           counter++;
      }
 }
-</script>--> 
+</script>
