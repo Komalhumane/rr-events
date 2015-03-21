@@ -384,7 +384,10 @@ for ($i = 1; $i <= 10; $i++) {
         </div>
     </div>
 </div>      
-    <?php endif;                        
+    <?php elseif($image = ""):
+echo $image_id;
+    endif;
+
 } 
 
  ?>               
