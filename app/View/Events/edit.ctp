@@ -528,9 +528,14 @@ for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;   
    
 }
-    if($image != ""): ?>
-    <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
-    <?php endif; 
+    if($image!=""){ ?>
+    
+   <?php } else{
+        echo "Not present";
+        echo $image_id;?>
+        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center> ?>
+       
+<?php    }
 ?>
         
     </div>
