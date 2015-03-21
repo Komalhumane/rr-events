@@ -385,6 +385,7 @@ for ($i = 1; $i <= 10; $i++) {
     </div>
 </div>      
     <?php elseif($image = ""):
+    echo "Not present";
 echo $image_id;
     endif;
 
