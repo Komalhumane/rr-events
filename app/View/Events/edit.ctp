@@ -386,8 +386,9 @@ for ($i = 1; $i <= 10; $i++) {
         </div>      
     <?php } else{
         echo "Not present";
-        echo $image_id;
-    }
+        echo $image_id; ?>
+        <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
+<?php    }
 
 } 
 
@@ -525,7 +526,7 @@ for ($i = 1; $i <= 10; $i++) {
         for ($i = 1; $i <= 10; $i++) {
     $image_id = 'photo_'.$i;    
     $image = $event[$image_id];
-    if($image=""): ?>
+    if($image = ""): ?>
     <center><a href="javascript:;" onClick="addInput('dynamicInput');">Add more photos</a></center>
     <?php endif; 
 }
